@@ -1,4 +1,4 @@
-const API_KEY = "f5f2ebbe19d44ecfa268f27f17617f24";  
+const API_KEY = process.env.REACT_APP_TWELVE_DATA_API_KEY;  
 const BASE_URL = "https://api.twelvedata.com/time_series";
 
 export const fetchStockData = async (symbol = "TSLA") => {
